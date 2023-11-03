@@ -5,7 +5,8 @@ const Home = () => {
     <m.main
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        transition={{duration: 0.75, ease: 'easeOut'}}
+        transition={{duration: 1, ease: 'easeOut'}}
+        className="home"
     >
         <h1 className="name">Michael Martin</h1>
         <div className="content">
