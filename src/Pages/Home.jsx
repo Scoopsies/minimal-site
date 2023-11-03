@@ -3,9 +3,10 @@ import { motion as m } from "framer-motion"
 const Home = () => {
   return (
     <m.main
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        transition={{duration: 1, ease: 'easeOut'}}
+        initial={{y: '100%'}}
+        animate={{y: "0%"}}
+        transition={{duration: 0.75, ease: 'easeOut'}}
+        // exit={{opacity: 1}}
         className="home"
     >
         <h1 className="name">Michael Martin</h1>

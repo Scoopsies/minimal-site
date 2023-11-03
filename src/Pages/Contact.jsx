@@ -3,9 +3,10 @@ import { motion as m } from "framer-motion"
 const Contact = () => {
     return (
       <m.main
-        initial={{ opacity: 0}}
-        animate={{ opacity: 1}}
+        initial={{ y: "100%"}}
+        animate={{ y: "0%"}}
         transition={{ duration: 1, ease: 'easeOut'}}
+        exit={{opacity: 1}}
         className="contact"
       >
           <h1 className="name">Contact Info</h1>

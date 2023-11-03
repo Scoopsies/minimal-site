@@ -3,20 +3,22 @@ import './App.css'
 import Navbar from './Componenets/Navbar'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation} from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 
 
 function App() {
-
+  const {pathname} = useLocation();
 
   return (
     <div className='page'>
       <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-      </Routes>
-
+      <AnimatePresence initial={false}>
+        <Routes key={pathname}>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </AnimatePresence>
     </div>
   )
 }
