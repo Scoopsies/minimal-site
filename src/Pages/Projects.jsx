@@ -1,14 +1,13 @@
 import { motion as m } from "framer-motion"
 
-const Contact = () => {
+const Projects = () => {
     return (
       <m.main
-        key="contact"
         initial={{ y: "100%"}}
         animate={{ y: "0%"}}
         transition={{ duration: 0.75, ease: 'easeOut'}}
         exit={{opacity: 1}}
-        className="contact"
+        className="projects"
       >
       <div className="nameContainer">
         <m.h1
@@ -18,7 +17,7 @@ const Contact = () => {
           exit={{ opacity: 0 }}
           className="name"
         >
-          Contact Info
+          Projects
         </m.h1>
       </div>
           <div className="content">
@@ -36,4 +35,4 @@ const Contact = () => {
     )
   }
 
-export default Contact
+export default Projects
