@@ -46,11 +46,21 @@ nav {
 
 .nameContainer {
   overflow: hidden;
+  height: 200px;
 }
 
-.content {
+.homeContent {
   display: flex;
   justify-content: space-between;
+  padding: 30px;
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -82,5 +92,70 @@ main {
 }
 
 .projects {
-  background-color: aquamarine;
+  background-color: rgb(99, 230, 186);
+}
+
+.profilePhoto {
+  width: 100%;
+  height: auto;
+}
+
+.imgCircle { 
+  position: relative;
+  width: 400px; 
+  height: 400px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+  margin-top: 125px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+
+.project {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectContainer { 
+  position: relative;
+  width: 500px; 
+  height: 300px; 
+  overflow: hidden; 
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.project1:hover {
+  filter: blur(4px);
+  color: white;
+}
+
+
+.projectLinks {
+  position: absolute;
+  height: 400px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectsContainter {
+  border: 1px solid black;
+  background-color: rgb(48, 48, 48);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 50px;
 }

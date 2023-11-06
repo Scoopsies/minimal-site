@@ -3,7 +3,6 @@ import { motion as m } from "framer-motion"
 const Contact = () => {
     return (
       <m.main
-        key="contact"
         initial={{ y: "100%"}}
         animate={{ y: "0%"}}
         transition={{ duration: 0.75, ease: 'easeOut'}}

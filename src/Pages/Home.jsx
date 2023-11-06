@@ -9,6 +9,11 @@ const Home = () => {
       exit={{ opacity: 1 }}
       className="home"
     >
+
+    <div className="center">
+    <div className="imgCircle">
+            <img className="profilePhoto" src="src/Images/Me.jpg" />
+        </div>
       <div className="nameContainer">
         <m.h1
           initial={{ y: "110%" }}
@@ -20,16 +25,24 @@ const Home = () => {
           Michael Martin
         </m.h1>
       </div>
-      <div className="content">
+    </div>
+
+
+
+
+
+
+
+      <div className="homeContent">
         <div>
-          <div>Frontend</div>
+          <div>Full Stack</div>
           <div>Software</div>
           <div>Developer</div>
         </div>
-        <div>
-          <div>This website was to help me learn framer-motion.</div>
-          <div>I hope its half as suave as I am, but fill out words.</div>
-          <div>I hope you enjoy it as much as I enjoyed making .</div>
+        <div className="contentRight">
+          <div>HTML | CSS | JavaScript</div>
+          <div>PostgreSQL | ExpressJS</div>
+          <div>React.js | Node.js</div>
         </div>
       </div>
     </m.main>
