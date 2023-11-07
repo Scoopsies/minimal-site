@@ -23,15 +23,15 @@ const Contact = () => {
           <div className="contactLogos">
 
             <div className="logoOverflow">
-             <img className="logo" src="src/Images/linkedIn.png" />
+             <img className="logo" src="public/Images/linkedIn.png" />
             </div>
             
             <div className="logoOverflow">
-             <img className="logo" src="src/Images/GitHub.png" />
+             <img className="logo" src="public/Images/GitHub.png" />
             </div>
 
             <div className="logoOverflow">
-             <img className="logo" src="src/Images/Email.png" />
+             <img className="logo" src="public/Images/Email.png" />
             </div>
       </div>
       </m.main>

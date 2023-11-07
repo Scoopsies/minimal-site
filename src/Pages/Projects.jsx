@@ -1,5 +1,4 @@
 import { motion as m } from "framer-motion"
-import { Link } from "react-router-dom"
 
 const Projects = () => {
     return (
@@ -32,10 +31,10 @@ const Projects = () => {
               <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
               <a href="https://harmonic-harbor.onrender.com" target="_blank" rel="noreferrer">Website</a>
             </div>
-            <img className="project" src="src/Images/Harmonic-Harbor.gif" />
+            <img className="project" src="public/Images/Harmonic-Harbor.gif" />
           </div>
         <div className="projectContainer">
-          <img className="project" src="src/Images/Minimal-Site.gif" />
+          <img className="project" src="public/Images/Minimal-Site.gif" />
           <div className="projectLinks">
             <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
           </div>
