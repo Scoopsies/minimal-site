@@ -12,7 +12,7 @@ const Home = () => {
 
     <div className="center">
         <div className="imgCircle">
-            <img className="profilePhoto" src="public/Images/Me.jpg" />
+            <img className="profilePhoto" src="/Images/Me.jpg" />
         </div>
             <div className="nameContainer">
                 <m.h1
