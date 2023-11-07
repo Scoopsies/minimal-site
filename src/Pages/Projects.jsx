@@ -28,12 +28,12 @@ const Projects = () => {
       transition={{delay: 1}}
       className="projectsContainter">
         <div className="projectContainer">
-        <div className="projectLinks">
-            <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://harmonic-harbor.onrender.com" target="_blank" rel="noreferrer">Website</a>
+          <div className="projectLinks">
+              <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://harmonic-harbor.onrender.com" target="_blank" rel="noreferrer">Website</a>
+            </div>
+            <img className="project" src="src/Images/Harmonic-Harbor.gif" />
           </div>
-          <img className="project" src="src/Images/Harmonic-Harbor.gif" />
-        </div>
         <div className="projectContainer">
           <img className="project" src="src/Images/Minimal-Site.gif" />
           <div className="projectLinks">

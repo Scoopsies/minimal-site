@@ -20,17 +20,20 @@ const Contact = () => {
           Contact Info
         </m.h1>
       </div>
-          <div className="content">
-              <div>
-                  <div>Reach Out:</div>
-              </div>
-              <div>
-                  <div> <a href='https://www.linkedin.com/in/consolelog-michael-martin/' rel="noreferrer" target="_blank">Linkedin</a> </div>
-                  <div> <a href='https://github.com/scoopsies' rel="noreferrer" target="_blank" >GitHub</a> </div>
-                  <div> <a href='mailto:mooninites103@gmail.com'>E-mail</a> </div>
-              </div>
-              
-          </div>
+          <div className="contactLogos">
+
+            <div className="logoOverflow">
+             <img className="logo" src="src/Images/linkedIn.png" />
+            </div>
+            
+            <div className="logoOverflow">
+             <img className="logo" src="src/Images/GitHub.png" />
+            </div>
+
+            <div className="logoOverflow">
+             <img className="logo" src="src/Images/Email.png" />
+            </div>
+      </div>
       </m.main>
     )
   }

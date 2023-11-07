@@ -11,20 +11,20 @@ const Home = () => {
     >
 
     <div className="center">
-    <div className="imgCircle">
+        <div className="imgCircle">
             <img className="profilePhoto" src="src/Images/Me.jpg" />
         </div>
-      <div className="nameContainer">
-        <m.h1
-          initial={{ y: "110%" }}
-          animate={{ y: "0%" }}
-          transition={{ delay: 0.5, ease: "easeOut" }}
-          exit={{ opacity: 0 }}
-          className="name"
-        >
-          Michael Martin
-        </m.h1>
-      </div>
+            <div className="nameContainer">
+                <m.h1
+                initial={{ y: "110%" }}
+                animate={{ y: "0%" }}
+                transition={{ delay: 0.5, ease: "easeOut" }}
+                exit={{ opacity: 0 }}
+                className="name"
+                >
+                Michael Martin
+                </m.h1>
+            </div>
     </div>
 
 
