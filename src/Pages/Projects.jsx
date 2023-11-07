@@ -24,7 +24,7 @@ const Projects = () => {
       <m.div 
       initial={{x: "-220%"}}
       animate={{x: "0%"}}
-      transition={{delay: 1}}
+      transition={{delay: 0.5}}
       className="projectsContainter">
         <div className="projectContainer">
           <div className="projectLinks">
