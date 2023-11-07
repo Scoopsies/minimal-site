@@ -138,8 +138,8 @@ main {
 
 .logoOverflow {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -154,6 +154,7 @@ main {
 .contactLogos {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project1:hover {
