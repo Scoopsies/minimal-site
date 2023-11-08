@@ -7,7 +7,7 @@ const Home = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
-      className="home"
+      className="page"
     >
 
     <div className="center">
@@ -33,7 +33,7 @@ const Home = () => {
 
 
 
-      <div className="homeContent">
+      <div className="content">
         <div>
           <div>Full Stack</div>
           <div>Software</div>

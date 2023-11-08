@@ -7,7 +7,7 @@ const Projects = () => {
         animate={{ x: "0%"}}
         transition={{ duration: 0.75, ease: 'easeOut'}}
         exit={{opacity: 1}}
-        className="projects"
+        className="page projects"
       >
       <div className="nameContainer">
         <m.h1
@@ -24,7 +24,7 @@ const Projects = () => {
       <m.div 
       initial={{x: "-220%"}}
       animate={{x: "0%"}}
-      transition={{delay: 0.5}}
+      transition={{ duration: 1}}
       className="projectsContainter">
         <div className="projectContainer">
           <div className="projectLinks">

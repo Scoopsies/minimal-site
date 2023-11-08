@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   padding: 0;
@@ -6,6 +10,16 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.page {
+  position: absolute;
+  color: rgb(48, 48, 48);
+  background-color: rgb(243, 199, 116);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 48px;
+}
 
 a {
   color: inherit;
@@ -17,10 +31,6 @@ ul {
   padding: 0;
   display: flex;
   gap: 1.5rem;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 nav {
@@ -35,7 +45,6 @@ nav {
 .selectedNav {
   font-style: italic;
   pointer-events: none;
-  text-decoration: none;
 }
 
 .name {
@@ -50,7 +59,6 @@ nav {
   height: 200px;
 }
 
-.homeContent,
 .content {
   display: flex;
   justify-content: space-between;
@@ -71,22 +79,6 @@ main {
   flex-direction: column;
   justify-content: space-around;
   font-size: larger;
-}
-
-.page {
-  padding: 48px;
-}
-
-.home,
-.contact,
-.projects {
-  position: absolute;
-  color: rgb(48, 48, 48);
-  background-color: rgb(243, 199, 116);
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
 }
 
 .contact {
@@ -118,12 +110,16 @@ main {
   margin-top: 50px;
 }
 
+/* <----- Projects Page -----> */
 
-.project {
-  width: 100%;
-  height: 100%;
-  object-fit:contain;
-  display: block;
+.projectsContainter {
+  /* border: 1px solid black; */
+  /* background-color: rgb(48, 48, 48); */
+  border-radius: 2rem;
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 80px;
 }
 
 .projectContainer { 
@@ -133,7 +129,58 @@ main {
   overflow: hidden; 
   border-radius: 1rem;
   text-align: center;
+  border: 3.5px black solid;
+  box-shadow: 10px 5px 5px rgb(48, 48, 48);
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.projectLinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.projectLinks > a {
+  background-color: rgb(48, 48, 48);
+  outline: none;
+  border: 1px solid white;
+  border-radius: 0.25rem;
   color: white;
+  margin: 1rem 9rem;
+  padding: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.projectLinks:hover {
+  backdrop-filter: blur(4px);
+  opacity: 1;
+}
+
+.projectLinks > a:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+/* <------ Contacts Page ------> */
+
+.contactLogos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .logoOverflow {
@@ -149,61 +196,4 @@ main {
   height: auto;
   object-fit: fill;
   display: block;
-}
-
-.contactLogos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.project1:hover {
-  filter: blur(4px);
-  color: white;
-}
-
-
-.projectLinks {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-
-.projectLinks:hover {
-  backdrop-filter: blur(4px);
-  opacity: 1;
-}
-
-.projectLinks > a {
-  background-color: rgb(48, 48, 48);
-  outline: none;
-  border: 1px solid white;
-  border-radius: 0.25rem;
-  color: white;
-  margin: 1rem 9rem;
-  padding: 0.25rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.projectLinks > a:hover {
-  cursor: pointer;
-  background-color: black;
-}
-
-.projectsContainter {
-  border: 1px solid black;
-  background-color: rgb(48, 48, 48);
-  border-radius: 2rem;
-  padding: 0.6rem 0;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 80px;
 }

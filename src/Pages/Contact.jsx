@@ -7,7 +7,7 @@ const Contact = () => {
         animate={{ y: "0%"}}
         transition={{ duration: 0.75, ease: 'easeOut'}}
         exit={{opacity: 1}}
-        className="contact"
+        className="page contact"
       >
         <div className="nameContainer">
           <m.h1
@@ -21,7 +21,12 @@ const Contact = () => {
           </m.h1>
         </div>
         
-        <div className="contactLogos">
+        <m.div 
+          initial={{y: "100%"}}
+          animate={{y:"0%"}}
+          transition={{delay: 0.5}}
+          className="contactLogos"
+        >
 
           <a href="https://www.linkedin.com/in/consolelog-michael-martin/" target="_blank" rel="noreferrer">
             <div className="logoOverflow">
@@ -40,7 +45,8 @@ const Contact = () => {
               <img className="logo" src="/Images/Email.png" />
             </div>
           </a>
-        </div>
+
+        </m.div>
       </m.main>
     )
   }
