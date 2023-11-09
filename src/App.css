@@ -112,7 +112,7 @@ main {
   position: absolute;
   width: 325px;
   height: 325px;
-  background: url(public/Images/Me.jpg);
+  background: url(/Images/Me.jpg);
   background-size: cover;
   border-radius: 50%;
 }
