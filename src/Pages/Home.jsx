@@ -1,11 +1,7 @@
-import { motion as m, transform } from "framer-motion";
+import { motion as m } from "framer-motion";
 import ReactCurvedText from "react-curved-text";
 
 const Home = () => {
-  const text = 'Michael Martin - Frontend Developer - Javascript | HTML | CSS'
-
-
-
   return (
     <m.main
       initial={{ y: "100%" }}
@@ -28,7 +24,7 @@ const Home = () => {
               ry={100}
               startOffset='0'
               reversed={false}
-              text='FULL STACK DEVELOPER -- PostgreSQL | Expressjs | React.js --'
+              text='FULL STACK DEVELOPER -- React.js | PostgreSQL | Expressjs --'
               textProps={{"style": {"fontSize": 21}}}
               textPathProps={null}
               tspanProps={{"dy": "87"}}

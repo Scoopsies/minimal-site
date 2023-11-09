@@ -30,19 +30,22 @@ const Contact = () => {
 
           <a href="https://www.linkedin.com/in/consolelog-michael-martin/" target="_blank" rel="noreferrer">
             <div className="logoOverflow">
-              <img className="logo" src="/Images/linkedIn.png" />
+              <img className="logo logo-back" src="https://media.licdn.com/dms/image/D4D35AQEHHS_kQTIVTg/profile-framedphoto-shrink_200_200/0/1694128022350?e=1700168400&v=beta&t=uzDLwwerQuWWIZRx1kPa4i81rD_R596JkxfeRV1yjZM" />
+              <img className="logo logo-front" src="/Images/linkedIn.png" />
             </div>
           </a>
           
           <a href="https://github.com/scoopsies" target="_blank" rel="noreferrer">
             <div className="logoOverflow">
-              <img className="logo" src="/Images/GitHub.png" />
+              <img className="logo" src="https://avatars.githubusercontent.com/u/138405614?v=4" />
+              <img className="logo logo-front" src="/Images/GitHub.png" />
             </div>
           </a>
 
           <a href="mailto:consolelogmichaelmartin@gmail.com">
             <div className="logoOverflow">
-              <img className="logo" src="/Images/Email.png" />
+              <img className="logo" src="https://media3.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif?cid=ecf05e47zzymzsjfb9ze88ddqt0upbdam4iz9sgztlbuactw&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+              <img className="logo logo-front" src="/Images/Email.png" />
             </div>
           </a>
 
