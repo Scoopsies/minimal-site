@@ -36,7 +36,7 @@ const Projects = () => {
         <div className="projectContainer">
           <img className="project" src="/Images/Minimal-Site.gif" />
           <div className="projectLinks">
-            <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://github.com/Scoopsies/minimal-site" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
       </m.div>
