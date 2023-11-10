@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+h2 {
+  margin: 0.15rem;
+}
+
 body,
 html {
   padding: 0;
@@ -18,7 +22,7 @@ html {
   left: 0px;
   width: 100%;
   height: 100%;
-  padding: 48px;
+  padding: 48px 48px 0px 48px;
 }
 
 a {
@@ -50,19 +54,17 @@ nav {
 .name {
   display: flex;
   justify-content: flex-end; 
-  padding: 20px 80px 0px 0px;
+  padding: 0px 80px 0px 0px;
   font-size: 75px;
+  margin: 0;
 }
 
 .nameContainer {
   overflow: hidden;
-  height: 200px;
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
+.bottom {
+  padding: 0px;
   color: rgb(48, 48, 48);
   font-weight: bold;
 }
@@ -86,15 +88,21 @@ main {
 }
 
 .projects {
-  background-color: rgb(99, 230, 186);
+  background-color: #3db376;
 }
 
 /* <----- Home Page -----> */
 
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .center {
   display: flex;
-  justify-content: space-between;
-  padding: 40px 0px 40px 40px;
+  justify-content: space-around;
+  /* padding: 40px 0px 40px 40px; */
   margin-top: 50px;
 }
 
