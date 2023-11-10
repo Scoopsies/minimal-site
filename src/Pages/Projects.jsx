@@ -15,7 +15,7 @@ const Projects = () => {
           animate={{ x: "0%" }}
           transition={{ delay: 0.5, ease: "easeOut" }}
           exit={{ opacity: 0 }}
-          className="name"
+          className="name projectsName"
         >
           Projects
         </m.h1>

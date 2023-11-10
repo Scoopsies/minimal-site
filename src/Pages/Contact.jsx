@@ -9,16 +9,31 @@ const Contact = () => {
         exit={{opacity: 1}}
         className="page contact"
       >
-        <div className="nameContainer">
-          <m.h1
-            initial={{ y: "110%" }}
-            animate={{ y: "0%" }}
-            transition={{ delay: 0.5, ease: "easeOut" }}
-            exit={{ opacity: 0 }}
-            className="name"
-          >
-            Contact Info
-          </m.h1>
+        <div className="contactText">
+          <div className="nameContainer">
+            <m.h1
+              initial={{ y: "110%" }}
+              animate={{ y: "0%" }}
+              transition={{ delay: 0.5, ease: "easeOut" }}
+              exit={{ opacity: 0 }}
+              className="name"
+            >
+              Contact Info
+            </m.h1>
+          </div>
+
+          <m.div 
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{delay: 2}}
+          className="contactPitch">
+            <h3>
+              Reach out if you have any questions,
+            </h3>
+            <h3>
+            want to collaborate, or just want to say hi!
+            </h3>
+          </m.div>
         </div>
         
         <m.div 
