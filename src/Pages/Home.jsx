@@ -65,7 +65,8 @@ const Home = () => {
               className="secondDescription"
               >
               <h2>I'm curently looking to collaborate on</h2>
-              <h2>any and all coding projects.</h2>
+              <h2>any software projects that seek to better</h2>
+              <h2>our community and/or world.</h2>
               </m.div>
               <br/>
               <m.h2
