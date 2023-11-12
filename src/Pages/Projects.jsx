@@ -26,18 +26,30 @@ const Projects = () => {
       animate={{x: "0%"}}
       transition={{ duration: 1}}
       className="projectsContainter">
+
         <div className="projectContainer">
-          <div className="projectLinks">
-              <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://harmonic-harbor.onrender.com" target="_blank" rel="noreferrer">Website</a>
+          <h2>Harmonic Harbor</h2>
+          <div className="gifContainer">
+            <div className="projectLinks">
+                <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://harmonic-harbor.onrender.com" target="_blank" rel="noreferrer">Website</a>
+              </div>
+              <img className="project" src="/Images/Harmonic-Harbor.gif" />
             </div>
-            <img className="project" src="/Images/Harmonic-Harbor.gif" />
-          </div>
+            <div>
+              An online store for selling musical insturments. It was created as a group project with a 2 week deadline using Agile methodology.
+            </div>
+        </div>
+
         <div className="projectContainer">
-          <img className="project" src="/Images/Minimal-Site.gif" />
-          <div className="projectLinks">
-            <a href="https://github.com/Scoopsies/minimal-site" target="_blank" rel="noreferrer">GitHub</a>
+          <h2>This Website</h2>
+          <div className="gifContainer">
+            <img className="project" src="/Images/Minimal-Site.gif" />
+            <div className="projectLinks">
+              <a href="https://github.com/Scoopsies/minimal-site" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </div>
+          <div>This is the website you are currently on. It was created with the goal in mind of letting me get more familiar with the Framer Motion animation library.</div>
         </div>
       </m.div>
       </m.main>

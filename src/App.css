@@ -156,7 +156,17 @@ main {
   gap: 50px;
 }
 
-.projectContainer { 
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  font-weight: bold;
+  gap: 12px;
+}
+
+.gifContainer { 
   position: relative;
   width: 500px; 
   height: 300px; 
