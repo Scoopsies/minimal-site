@@ -285,3 +285,97 @@ main {
   padding: 0;
   text-decoration: underline;
 }
+
+/* Mobile Formatting */
+
+@media only screen and (max-width: 1000px) {
+  * {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h2,
+  h3 {
+    margin: 0.15rem;
+  }
+  
+  body,
+  html {
+    padding: 0px;
+    margin: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .page {
+    position: static;
+    color: rgb(48, 48, 48);
+    background-color: rgb(243, 199, 116);
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav {
+    font-weight: 500;
+    font-size: 1.5rem;
+    list-style: 2rem;
+    z-index: 20;
+    position: relative;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  .name {
+    padding: 0px;
+    font-size: 75px;
+    margin: 0;
+  }
+
+  .center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px 10px 30px 20px;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .imgCircle { 
+    position: relative;
+    width: 100vw; 
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profilePhoto {
+    position: absolute;
+    background: url(/Images/Me.jpg);
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  .rotating-curved-text {
+    opacity: 0;
+  }
+}
