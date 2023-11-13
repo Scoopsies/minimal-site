@@ -6,7 +6,7 @@ const Home = () => {
     <m.main
       initial={{ y: "100%" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
+      transition={{ duration: 0.75, ease: "easeOut"}}
       exit={{ opacity: 1 }}
       className="page"
     >

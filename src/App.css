@@ -239,6 +239,12 @@ main {
   flex-wrap: wrap;
 }
 
+.contactLogosNoHover {
+  display: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .logoOverflow {
   position: relative;
   width: 400px;
@@ -342,40 +348,35 @@ main {
   .name {
     padding: 0px;
     font-size: 75px;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .center {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 0px;
     text-align: center;
-    padding: 20px 10px 30px 20px;
+    padding: 0px 30px;
   }
 
-  nav {
-    position: static;
+  .rotating-curved-text {
+    display: none;
   }
 
-  .imgCircle { 
-    position: relative;
-    width: 100vw; 
-    border-radius: 50%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .bottom {
+    padding: 50px;
   }
+}
 
-  .profilePhoto {
-    position: absolute;
-    background: url(/Images/Me.jpg);
-    background-size: cover;
-    border-radius: 50%;
+@media (hover: none) {
+  .contactLogos {
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   
-  .rotating-curved-text {
-    opacity: 0;
+  .contactLogosNoHover {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
