@@ -47,12 +47,7 @@ const Contact = () => {
             <div className="logoOverflow">
                 <img className="logo" src="https://media.licdn.com/dms/image/D4D35AQEHHS_kQTIVTg/profile-framedphoto-shrink_200_200/0/1694128022350?e=1700168400&v=beta&t=uzDLwwerQuWWIZRx1kPa4i81rD_R596JkxfeRV1yjZM" />
                 <p className="logoText linkedin">Linkedin</p>
-              <m.div
-              initial={{opacity: 1}}
-              animate={{opacity: 0}}
-              transition={{delay: 2, duration: 2, repeat: Infinity, repeatType: "reverse"}}>
                 <img className="logo logo-front" src="/Images/linkedIn.png" />
-              </m.div>
             </div>
           </a>
           
@@ -73,6 +68,8 @@ const Contact = () => {
           </a>
 
         </m.div>
+
+{/* This instace is an alternative in case of device with no hover */}
 
       <AnimatePresence initial={true}>
         <m.div 

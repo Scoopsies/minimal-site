@@ -365,6 +365,12 @@ main {
   .bottom {
     padding: 50px;
   }
+
+  /* Contact Page */
+
+  .contact {
+    background-color: rgb(223, 104, 88);
+  }
 }
 
 @media (hover: none) {
