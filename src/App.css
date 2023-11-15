@@ -148,6 +148,74 @@ main {
   }
 }
 
+/* <------ Contacts Page ------> */
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contactPitch {
+  padding: 0px 70px 0px 0px;
+  text-align: center;
+}
+
+.contactLogos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contactLogosNoHover {
+  display: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logoOverflow {
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+}
+
+.logoText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -115%);
+  font-size: 50px;
+  color: rgb(223, 104, 88);
+  border: 1px rgb(48, 48, 48) solid;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  background: rgb(48, 48, 48);
+}
+
+.email {
+  transform: translate(-50%, -270%);
+}
+
+.logo-front {
+  transition: opacity 1s;
+}
+
+.logo-front:hover {
+  opacity: 0;
+}
+
 /* <----- Projects Page -----> */
 
 .projectsContainter {
@@ -160,7 +228,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  max-width: 500px;
   text-align: center;
   font-weight: bold;
   gap: 12px;
@@ -168,8 +236,8 @@ main {
 
 .gifContainer { 
   position: relative;
-  width: 500px; 
-  height: 300px; 
+  max-width: 500px; 
+  max-height: 300px; 
   overflow: hidden; 
   border-radius: 1rem;
   text-align: center;
@@ -219,17 +287,168 @@ main {
   background-color: black;
 }
 
-/* <------ Contacts Page ------> */
+.projectsName {
+  padding: 0;
+  text-decoration: underline;
+}
+
+
+
+/* Mobile Formatting */
+
+@media only screen and (max-width: 1000px) {
+  * {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h2,
+  h3 {
+    margin: 0.15rem;
+  }
+  
+  body,
+  html {
+    padding: 0px;
+    margin: 0px;
+    overflow: visible;
+    overflow-x: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .page {
+    position: static;
+    color: rgb(48, 48, 48);
+    background-color: rgb(243, 199, 116);
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav {
+    font-weight: 500;
+    font-size: 1.5rem;
+    list-style: 2rem;
+    z-index: 20;
+    position: relative;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  .name {
+    padding: 0px;
+    font-size: 75px;
+    text-align: center;
+    /* margin: 0; */
+  }
+
+  .center {
+    flex-direction: column;
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px 30px;
+    align-items: center;
+  }
+
+  .rotating-curved-text {
+    display: none;
+  }
+
+  .bottom {
+    padding: 50px;
+  }
+
+  /* Contact Page */
+
+  .contact {
+    background-color: rgb(223, 104, 88);
+  }
+
+  .contactText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contactLogos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: space-around;
+    padding-top: 30px;
+  }
+  
+  .contactPitch {
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .logoOverflow {
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+  }
+  
+  .logoText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -115%);
+    font-size: 50px;
+    color: rgb(223, 104, 88);
+    border: 1px rgb(48, 48, 48) solid;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    background: rgb(48, 48, 48);
+  }
+  
+  .email {
+    transform: translate(-50%, -270%);
+  }
+  
+  .logo-front {
+    transition: opacity 1s;
+  }
+  
+  .logo-front:hover {
+    opacity: 0;
+  }
+  
+  /* <------ Contacts Page ------> */
 
 .contactText {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 }
 
 .contactPitch {
-  padding: 0px 70px 0px 0px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -287,90 +506,88 @@ main {
   opacity: 0;
 }
 
+/* <----- Projects Page -----> */
+
+.projects {
+  background-color: #3db376;
+}
+
+.projectsContainter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  font-weight: bold;
+  gap: 12px;
+  padding: 20px;
+  margin: 12px
+}
+
+.gifContainer { 
+  position: relative;
+  max-width: 500px; 
+  max-height: 300px; 
+  overflow: hidden; 
+  border-radius: 1rem;
+  text-align: center;
+  border: 3.5px black solid;
+  box-shadow: 10px 5px 5px rgb(48, 48, 48);
+}
+
+.project {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+/* .projectLinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+} */
+
+/* .projectLinks > a {
+  background-color: rgb(48, 48, 48);
+  outline: none;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  color: white;
+  margin: 1rem 9rem;
+  padding: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+} */
+
+/* .projectLinks:hover {
+  backdrop-filter: blur(4px);
+  opacity: 1;
+} */
+
+/* .projectLinks > a:hover {
+  cursor: pointer;
+  background-color: black;
+} */
+/* 
 .projectsName {
   padding: 0;
   text-decoration: underline;
-}
-
-/* Mobile Formatting */
-
-@media only screen and (max-width: 1000px) {
-  * {
-    box-sizing: content-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  h2,
-  h3 {
-    margin: 0.15rem;
-  }
-  
-  body,
-  html {
-    padding: 0px;
-    margin: 0px;
-    overflow: scroll;
-    overflow-x: hidden;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  .page {
-    position: static;
-    color: rgb(48, 48, 48);
-    background-color: rgb(243, 199, 116);
-    width: 100vw;
-    height: auto;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav {
-    font-weight: 500;
-    font-size: 1.5rem;
-    list-style: 2rem;
-    z-index: 20;
-    position: relative;
-    font-weight: bold;
-    padding: 1rem;
-  }
-  
-  .name {
-    padding: 0px;
-    font-size: 75px;
-    /* margin: 0; */
-  }
-
-  .center {
-    flex-direction: column;
-    margin-top: 0px;
-    text-align: center;
-    padding: 0px 30px;
-  }
-
-  .rotating-curved-text {
-    display: none;
-  }
-
-  .bottom {
-    padding: 50px;
-  }
-
-  /* Contact Page */
-
-  .contact {
-    background-color: rgb(223, 104, 88);
-  }
+} */
 }
 
 @media (hover: none) {
@@ -382,7 +599,9 @@ main {
   
   .contactLogosNoHover {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    align-items: space-around;
+    padding-top: 30px;
   }
 }
