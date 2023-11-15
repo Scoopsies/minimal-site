@@ -10,10 +10,10 @@ const Navbar = () => {
             <Link to={'/'} className={pathname === '/' ? 'selectedNav' : null}>
                 <li>Home</li>
             </Link>
-            <Link to={'/contact'} className={pathname === '/contact' ? 'selectedNav' : null}>
+            <Link to={'/contact'} className={pathname === '/contact' ? 'selectedNav contact' : null}>
                 <li>Contact</li>
             </Link>
-            <Link to={'/projects'} className={pathname === '/projects' ? 'selectedNav' : null}>
+            <Link to={'/projects'} className={pathname === '/projects' ? 'selectedNav projects' : null}>
               <li>Projects</li>
             </Link>
         </ul>
