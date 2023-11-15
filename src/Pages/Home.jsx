@@ -54,7 +54,7 @@ const Home = () => {
             transition={{delay: 2}}
             className="description"
             >
-              <h2>I'm a full stack software developer</h2>
+              <h2>{"I'm a full stack software developer"}</h2>
               <h2>with a background in sales, special events,</h2>
               <h2>and management.</h2>
               <br/>
@@ -64,7 +64,7 @@ const Home = () => {
               transition={{delay: 4}}
               className="secondDescription"
               >
-              <h2>I'm curently looking to collaborate on</h2>
+              <h2>{"I'm curently looking to collaborate on"}</h2>
               <h2>any software projects that seek to better</h2>
               <h2>our community and/or world.</h2>
               </m.div>

@@ -11,9 +11,7 @@ import { AnimatePresence, motion as m } from 'framer-motion'
 
 function App() {
   const location = useLocation();
-
-  console.log(location)
-
+  
   return (
     <div className={`page 
     ${location.pathname === '/contact' ? 'contact' 
