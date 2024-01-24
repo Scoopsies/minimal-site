@@ -45,7 +45,7 @@ const Contact = () => {
 
           <a href="https://www.linkedin.com/in/consolelog-michael-martin/" target="_blank" rel="noreferrer">
             <div className="logoOverflow">
-                <img className="logo" src="/public/Images/Me.jpg" />
+                <img className="logo" src="/Images/Me.jpg" />
                 <p className="logoText linkedin">Linkedin</p>
                 <img className="logo logo-front" src="/Images/linkedIn.png" />
             </div>
