@@ -12,10 +12,9 @@ const Home = () => {
       className="page"
     >
 
+    <Navbar/>
+
     <div className="center">
-
-      <Navbar/>
-
         <div className="imgCircle">
             <div className="profilePhoto"/>
             <ReactCurvedText 
