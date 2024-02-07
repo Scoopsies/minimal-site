@@ -1,24 +1,19 @@
 
 import './App.css'
-import Navbar from './Componenets/Navbar'
 import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import Projects from './Pages/Projects'
 import Dev from './Pages/Dev'
-import Test from './Pages/test'
-import { Routes, Route, useLocation} from 'react-router-dom'
-import { AnimatePresence, motion as m } from 'framer-motion'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 
 
 function App() {
   const location = useLocation();
+
   
   return (
-    <div className={`page 
-    ${location.pathname === '/contact' ? 'contact' 
-    : location.pathname === '/projects' ? 'projects' 
-    : null}`}>
-      <Navbar/>
+    <div>
       <AnimatePresence initial={false}>
         <Routes location={location} key={location.key}>
           <Route path='/' element={<Home/>}/>

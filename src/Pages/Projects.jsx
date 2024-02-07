@@ -1,4 +1,5 @@
 import { motion as m } from "framer-motion"
+import Navbar from "../Componenets/Navbar"
 
 const Projects = () => {
     return (
@@ -9,6 +10,9 @@ const Projects = () => {
         exit={{opacity: 1}}
         className="page projects"
       >
+
+      <Navbar/>
+
       <div className="nameContainer">
         <m.h1
           initial={{ x: "110%" }}

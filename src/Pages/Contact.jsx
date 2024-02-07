@@ -1,4 +1,5 @@
 import { AnimatePresence, motion as m } from "framer-motion"
+import Navbar from "../Componenets/Navbar"
 
 const Contact = () => {
     return (
@@ -9,6 +10,9 @@ const Contact = () => {
         exit={{opacity: 1}}
         className="page contact"
       >
+
+        <Navbar/>
+        
         <div className="contactText">
           <div className="nameContainer">
             <m.h1

@@ -1,5 +1,6 @@
 import { motion as m, AnimatePresence } from "framer-motion";
 import ReactCurvedText from "react-curved-text";
+import Navbar from "../Componenets/Navbar";
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
 
     <div className="center">
 
+      <Navbar/>
+      
         <div className="imgCircle">
             <div className="profilePhoto"/>
             <ReactCurvedText 
@@ -83,8 +86,8 @@ const Home = () => {
       <div className="bottom">
         <div className="contentRight">
           <div>HTML | CSS | JavaScript</div>
-          <div>PostgreSQL | ExpressJS</div>
-          <div>React.js | Node.js</div>
+          <div>PostgreSQL | TypeScript</div>
+          <div>ExpressJS | React.js | Node.js</div>
         </div>
       </div>
     </m.main>
