@@ -28,16 +28,16 @@ const Projects = () => {
       className="projectsContainter">
 
         <div className="projectContainer">
-          <h2>Harmonic Harbor</h2>
+          <h2>DIY Dog</h2>
           <div className="gifContainer">
             <div className="projectLinks">
-                <a href="https://github.com/The-Whey/Capstone" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="https://harmonic-harbor.onrender.com" target="_blank" rel="noreferrer">Website</a>
+                <a href="https://github.com/Scoopsies/BrewDog" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://diy-dog.onrender.com/" target="_blank" rel="noreferrer">Website</a>
               </div>
-              <img className="project" src="/Images/Harmonic-Harbor.gif" />
+              <img className="project" src="/Images/diydog.gif" />
             </div>
             <div>
-              An online store for selling musical insturments. It was created as a group project with a 2 week deadline using Agile methodology.
+              A recipe site for every BrewDog beer made until 2020. The goals I achieved with this project were to get familiar with TypeScript, Yarn, Tanstack Query, and mobile first design.  
             </div>
         </div>
 

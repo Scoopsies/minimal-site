@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Contact from './Pages/Contact'
 import Projects from './Pages/Projects'
 import Dev from './Pages/Dev'
+import Test from './Pages/test'
 import { Routes, Route, useLocation} from 'react-router-dom'
 import { AnimatePresence, motion as m } from 'framer-motion'
 
