@@ -15,7 +15,7 @@ const Home = () => {
     <div className="center">
 
       <Navbar/>
-      
+
         <div className="imgCircle">
             <div className="profilePhoto"/>
             <ReactCurvedText 
@@ -52,6 +52,7 @@ const Home = () => {
                 </m.h1>
             </div>
             <m.div
+            key='description'
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{delay: 2}}
